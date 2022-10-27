@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "00c86360631f86c4",
+        "id": "972e49bfb6c40e6d",
         "type": "tabs",
         "children": [
           {
-            "id": "1081977903107bb7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/Basic.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "98e4be898f5f0d9c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Languages/Rust/Basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c336edef50d65f42",
+            "id": "df55f8521e215572",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,9 +136,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c336edef50d65f42",
+  "active": "df55f8521e215572",
   "lastOpenFiles": [
+    "Docker/Basic.md",
     "Languages/Rust/Basics.md",
-    "Docker/Basic.md"
+    "README.md"
   ]
 }
