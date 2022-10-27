@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lang/Rust/Basics.md",
+                "file": "Languages/Rust/Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lang/Rust/Basics.md",
+                "file": "Languages/Rust/Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lang/Rust/Basics.md",
+                "file": "Languages/Rust/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lang/Rust/Basics.md"
+                "file": "Languages/Rust/Basics.md"
               }
             }
           }
@@ -149,7 +149,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "98e4be898f5f0d9c",
+  "active": "48b35d08f12c27f1",
   "lastOpenFiles": [
     "Docker/Basic.md"
   ]
