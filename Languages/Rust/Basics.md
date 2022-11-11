@@ -1,2 +1,2 @@
-### Why Rust?
+# Why Rust?
 
