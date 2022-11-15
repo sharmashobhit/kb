@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "30da3179065c8861",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "System Design/02-estimation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/Rust/Vec.md",
+                "file": "System Design/02-estimation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/Rust/Vec.md",
+                "file": "System Design/02-estimation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,19 +150,30 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/Rust/Vec.md"
+                "file": "System Design/02-estimation.md"
               }
             }
+          },
+          {
+            "id": "c85f2a86dceb46d1",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "8ffba28f622fcbb3",
+  "active": "30da3179065c8861",
   "lastOpenFiles": [
+    "System Design/01-basic-steps.md",
+    "System Design/02-estimation.md",
+    "Languages/Rust/Vec.md",
     "Languages/Rust/Basics.md",
     "Docker/Basic.md",
     "README.md"
