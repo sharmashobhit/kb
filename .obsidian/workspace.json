@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Languages/Svelte/svelte-cli.md",
+                "file": "docs/Languages/Svelte/cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Languages/Svelte/svelte-cli.md",
+                "file": "docs/Languages/Svelte/cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Languages/Svelte/svelte-cli.md",
+                "file": "docs/Languages/Svelte/cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,14 +97,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/Languages/mkdocs/markdown.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e131041a8e374612",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Languages/mermaid/cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -170,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/Languages/mermaid/cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/Languages/mermaid/cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md"
+                "file": "docs/Languages/mermaid/cheatsheet.md"
               }
             }
           },
@@ -240,17 +252,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "86d9e46ca5d1cb4f",
+  "active": "e131041a8e374612",
   "lastOpenFiles": [
-    "docs/CS50AI/Notebook.md",
     "docs/Languages/mkdocs/markdown.md",
-    "docs/Languages/Svelte/svelte-cli.md",
+    "docs/Languages/mermaid/cheatsheet.md",
+    "docs/Languages/Svelte/cheatsheet.md",
+    "docs/Languages/Svelte/sveltekit.md",
+    "docs/CS50AI/Notebook.md",
+    "docs/index.md",
     "code/test.rs.md",
     "README.md",
-    "docs/index.md",
     "docs/Untitled.md",
-    "docs/Languages/Svelte/sveltekit.md",
-    "docs/Languages/Rust/Vec.md",
-    "docs/System Design/02-estimation.md"
+    "docs/Languages/Rust/Vec.md"
   ]
 }
