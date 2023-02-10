@@ -7,6 +7,10 @@ npm run dev
 ```
 
 
+Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.{ .annotate }
+
+
+
 ```yaml
 theme:
   features:
@@ -15,6 +19,9 @@ theme:
 
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
     text__, images, ... basically anything that can be written in Markdown.
+2.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be expressed in Markdown.
+
 
 
 

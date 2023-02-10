@@ -1,14 +1,16 @@
 ### State
 A state in a problem represents the summary of the problem at current(or at time t) time.
 
-### Initial State
+### Initial State ($S$)
 Starting state of the problem. 
 
-### Action
+### Action ($A$)
 An action is defined as something that changes the state of the system from A to B.
 
-### Transition Model
-`Result(State, Action) => New State`. Effectively, the transition model represents the action and the resultant state after the action is taken on the previous state.
+### Transition Model ($T$)
+Transition model $T(S_n, A_i) =>S_{n+1}$ .
+
+Effectively, the transition model represents the action and the resultant state after the action is taken on the previous state.
 
 ### Goal Test
 Goal test represents the final stage of the problem. In a simple case it can be 1 state. for more complicated cases, we can have various goals.

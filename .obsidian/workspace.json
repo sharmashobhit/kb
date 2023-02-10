@@ -90,9 +90,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "86d9e46ca5d1cb4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/CS50AI/Notebook.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -158,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Languages/Svelte/svelte-cli.md",
+                "file": "docs/CS50AI/Notebook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Languages/Svelte/svelte-cli.md",
+                "file": "docs/CS50AI/Notebook.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Languages/Svelte/svelte-cli.md"
+                "file": "docs/CS50AI/Notebook.md"
               }
             }
           },
@@ -228,17 +240,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "02b4f2e605dc1940",
+  "active": "86d9e46ca5d1cb4f",
   "lastOpenFiles": [
-    "code/test.rs.md",
+    "docs/CS50AI/Notebook.md",
+    "docs/Languages/mkdocs/markdown.md",
     "docs/Languages/Svelte/svelte-cli.md",
+    "code/test.rs.md",
     "README.md",
     "docs/index.md",
     "docs/Untitled.md",
     "docs/Languages/Svelte/sveltekit.md",
-    "docs/CS50AI/Notebook.md",
     "docs/Languages/Rust/Vec.md",
-    "docs/System Design/02-estimation.md",
-    "docs/System Design/01-basic-steps.md"
+    "docs/System Design/02-estimation.md"
   ]
 }
