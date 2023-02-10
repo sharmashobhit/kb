@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Rust/Basics.md",
+                "file": "docs/Languages/Rust/Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Rust/Vec.md",
+                "file": "docs/Languages/Rust/Vec.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS50AI/Notebook.md",
+                "file": "docs/CS50AI/Notebook.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Svelte/svelte-cli.md",
+                "file": "docs/Languages/Svelte/svelte-cli.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Languages/Svelte/sveltekit.md",
+                "file": "docs/Languages/Svelte/sveltekit.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Languages/Svelte/sveltekit.md",
+                "file": "docs/Languages/Svelte/sveltekit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Languages/Svelte/sveltekit.md",
+                "file": "docs/Languages/Svelte/sveltekit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Languages/Svelte/sveltekit.md"
+                "file": "docs/Languages/Svelte/sveltekit.md"
               }
             }
           },
@@ -204,15 +204,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4814bcd823f4687f",
+  "active": "48b35d08f12c27f1",
   "lastOpenFiles": [
-    "Languages/Svelte/svelte-cli.md",
-    "CS50AI/Notebook.md",
-    "Languages/Rust/Vec.md",
-    "System Design/02-estimation.md",
-    "System Design/01-basic-steps.md",
-    "Languages/Rust/Basics.md",
-    "Docker/Basic.md",
+    "docs/Languages/Svelte/svelte-cli.md",
+    "docs/CS50AI/Notebook.md",
+    "docs/Languages/Rust/Vec.md",
+    "docs/System Design/02-estimation.md",
+    "docs/System Design/01-basic-steps.md",
+    "docs/Languages/Rust/Basics.md",
+    "docs/Docker/Basic.md",
     "README.md"
   ]
 }
