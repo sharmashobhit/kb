@@ -47,7 +47,9 @@ plugins:
   - roamlinks
   - mermaid2
   - encryptcontent:
-    use_secret: "test123"
+      global_password: "monkponk"
+      remember_password: True
+      search_index: "clear"
 
 extra_javascript:
   - javascripts/mathjax.js
