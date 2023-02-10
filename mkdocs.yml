@@ -46,10 +46,6 @@ plugins:
   - search
   - roamlinks
   - mermaid2
-  - encryptcontent:
-      global_password: "monkponk"
-      remember_password: True
-      search_index: "clear"
 
 extra_javascript:
   - javascripts/mathjax.js
