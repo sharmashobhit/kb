@@ -114,9 +114,43 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "59dc0ee25b0a854b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/k8s/cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "88e21aa2e661db26",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.16"
+              }
+            }
+          },
+          {
+            "id": "3d9f783851956d44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/General Linux/Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -182,7 +216,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Languages/mermaid/cheatsheet.md",
+                "file": "docs/General Linux/Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +233,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Languages/mermaid/cheatsheet.md",
+                "file": "docs/General Linux/Networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +256,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Languages/mermaid/cheatsheet.md"
+                "file": "docs/General Linux/Networking.md"
               }
             }
           },
@@ -252,17 +286,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e131041a8e374612",
+  "active": "3d9f783851956d44",
   "lastOpenFiles": [
-    "docs/Languages/mkdocs/markdown.md",
+    "docs/General Linux/Networking.md",
+    "docs/General Linux",
     "docs/Languages/mermaid/cheatsheet.md",
+    "docs/k8s/cheatsheet.md",
+    "docs/k8s",
+    "docs/Languages/mermaid/Untitled.md",
+    "docs/Languages/mkdocs/markdown.md",
     "docs/Languages/Svelte/cheatsheet.md",
     "docs/Languages/Svelte/sveltekit.md",
     "docs/CS50AI/Notebook.md",
     "docs/index.md",
     "code/test.rs.md",
     "README.md",
-    "docs/Untitled.md",
-    "docs/Languages/Rust/Vec.md"
+    "docs/Untitled.md"
   ]
 }
