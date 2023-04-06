@@ -1,4 +1,6 @@
-# Create a load balancer:
+# Cheatsheet
+
+## Create a load balancer
 
 ```yaml
 apiVersion: v1
@@ -16,4 +18,3 @@ spec:
       port: 8080
       targetPort: 8080
 ```
-
