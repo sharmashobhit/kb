@@ -143,7 +143,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/General Linux/Networking.md",
+                "file": "docs/Docker/Basic.md",
                 "mode": "source",
                 "source": false
               }
@@ -216,7 +216,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/General Linux/Networking.md",
+                "file": "docs/Docker/Basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -233,7 +233,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/General Linux/Networking.md",
+                "file": "docs/Docker/Basic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -256,7 +256,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/General Linux/Networking.md"
+                "file": "docs/Docker/Basic.md"
               }
             }
           },
@@ -288,10 +288,11 @@
   },
   "active": "3d9f783851956d44",
   "lastOpenFiles": [
-    "docs/General Linux/Networking.md",
-    "docs/General Linux",
+    "README.md",
     "docs/Languages/mermaid/cheatsheet.md",
     "docs/k8s/cheatsheet.md",
+    "docs/General Linux/Networking.md",
+    "docs/General Linux",
     "docs/k8s",
     "docs/Languages/mermaid/Untitled.md",
     "docs/Languages/mkdocs/markdown.md",
@@ -300,7 +301,6 @@
     "docs/CS50AI/Notebook.md",
     "docs/index.md",
     "code/test.rs.md",
-    "README.md",
     "docs/Untitled.md"
   ]
 }
