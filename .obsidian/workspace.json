@@ -119,14 +119,40 @@
             "id": "88e21aa2e661db26",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.1.16"
+                "file": "docs/Docker/Basic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "111eb00a742c7ff6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/General Linux/Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "752b1e35d0c5ad50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/Docker/buildx.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -192,6 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/Docker/buildx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,6 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/Docker/buildx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -229,7 +257,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/Docker/buildx.md"
+              }
             }
           },
           {
@@ -258,8 +288,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "88e21aa2e661db26",
+  "active": "752b1e35d0c5ad50",
   "lastOpenFiles": [
+    "docs/Docker/buildx.md",
+    "docs/General Linux/Networking.md",
+    "docs/Kubernetes/Local Node Setup.md",
+    "docs/Docker/Basic.md",
+    "docs/Kubernetes/Untitled",
     "docs/Kubernetes/Flux/Cheatsheet.md",
     "docs/Kubernetes/Flux",
     "docs/Kubernetes/Cheatsheet.md",
@@ -268,10 +303,8 @@
     "docs/Services/Kubernetes",
     "docs/Services",
     "docs/Kubernetes/cheatsheet.md",
-    "docs/Docker/Basic.md",
     "README.md",
     "docs/Languages/mermaid/cheatsheet.md",
-    "docs/General Linux/Networking.md",
     "docs/General Linux",
     "docs/Languages/mermaid/Untitled.md",
     "docs/Languages/mkdocs/markdown.md",
