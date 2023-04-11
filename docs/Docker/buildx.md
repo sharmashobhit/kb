@@ -11,6 +11,6 @@ Here `buildkitd.toml` is used to specify the configuration of the build environm
 ```toml
 # optionally mirror configuration can be done by defining it as a registry.
 
-[registry."192.168.29.223:8080"]
+[registry."<host>:<port>"]
 http = true
 ```
