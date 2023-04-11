@@ -9,8 +9,6 @@ docker buildx create --use desktop-linux --config buildkitd.toml
 Here `buildkitd.toml` is used to specify the configuration of the build environment. In my particular case, I have a self hosted docker image registry for my Kubernetes cluster. You can set up insecure registry url in the buildkit like this:
 
 ```toml
-# optionally mirror configuration can be done by defining it as a registry.
-
 [registry."<host>:<port>"]
 http = true
 ```
