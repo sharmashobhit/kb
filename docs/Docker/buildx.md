@@ -12,3 +12,6 @@ Here `buildkitd.toml` is used to specify the configuration of the build environm
 [registry."<host>:<port>"]
 http = true
 ```
+
+
+[Reference](https://docs.docker.com/build/buildkit/toml-configuration/)
