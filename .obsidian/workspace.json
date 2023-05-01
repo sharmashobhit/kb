@@ -8,103 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "df55f8521e215572",
+            "id": "7bcf89ec08ad0d7a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Languages/Rust/Basics.md",
+                "file": "docs/Kafka.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8ffba28f622fcbb3",
+            "id": "a8d823083a467014",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Languages/Rust/Vec.md",
+                "file": "docs/System Design/01-framework.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "707778e45f395bba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/CS50AI/Notebook.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc8a79dd03592d28",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Languages/Svelte/cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4814bcd823f4687f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Languages/Svelte/sveltekit.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f9d1186bfea2d5aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Languages/Svelte/cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "02b4f2e605dc1940",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Languages/Svelte/cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "86d9e46ca5d1cb4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Languages/mkdocs/markdown.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e131041a8e374612",
+            "id": "b9b4edc6a5430f5c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -114,45 +42,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "88e21aa2e661db26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Docker/Basic.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "111eb00a742c7ff6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/General Linux/Networking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "752b1e35d0c5ad50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Docker/buildx.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 11
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "224c6a61c99b5164",
@@ -218,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Docker/buildx.md",
+                "file": "docs/Kafka.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Docker/buildx.md",
+                "file": "docs/Kafka.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Docker/buildx.md"
+                "file": "docs/Kafka.md"
               }
             }
           },
@@ -275,21 +167,40 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "752b1e35d0c5ad50",
+  "active": "7bcf89ec08ad0d7a",
   "lastOpenFiles": [
+    "Pasted image 20230501182915.png",
+    "Pasted image 20230501182657.png",
+    "Pasted image 20230501182517.png",
+    "Pasted image 20230501181932.png",
+    "Pasted image 20230501181856.png",
+    "Pasted image 20230501181701.png",
+    "Pasted image 20230501181546.png",
+    "Pasted image 20230501181201.png",
+    "Pasted image 20230501180846.png",
+    "docs/Languages/mermaid/cheatsheet.md",
+    "docs/Kafka.md",
+    "docs/System Design/02-estimation.md",
+    "docs/Untitled",
+    "docs/System Design/01-framework.md",
+    "docs/System Design/01-basic-steps.md",
+    "docs/System Design/00-cheatsheet.md",
+    "docs/index.md",
+    "docs/Languages/index..md",
     "docs/Docker/buildx.md",
     "docs/General Linux/Networking.md",
     "docs/Kubernetes/Local Node Setup.md",
@@ -304,15 +215,12 @@
     "docs/Services",
     "docs/Kubernetes/cheatsheet.md",
     "README.md",
-    "docs/Languages/mermaid/cheatsheet.md",
     "docs/General Linux",
     "docs/Languages/mermaid/Untitled.md",
     "docs/Languages/mkdocs/markdown.md",
     "docs/Languages/Svelte/cheatsheet.md",
     "docs/Languages/Svelte/sveltekit.md",
     "docs/CS50AI/Notebook.md",
-    "docs/index.md",
-    "code/test.rs.md",
-    "docs/Untitled.md"
+    "code/test.rs.md"
   ]
 }
