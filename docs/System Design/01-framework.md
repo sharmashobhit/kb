@@ -14,4 +14,23 @@ Considering an interview usually lasts 60 minutes, introduction and closing ques
 
 ## Closing statements/Improvements/Tradeoffs
 
+- Functional Requirements
+- Non Functional Requirements
+- Rough Estimations
+- Communication interface/API
+- High Level Design
+- Data Modeling/ERD
+- Authentication
+- Authorization
+- Security
+- Reliability
+- Scalibility
+- Exception Handling
+- Fault tolerance
+- Error Handling
+- Schema
+- Monitoring
+- Concurrency
+- Latency
+- Tradeoffs
 

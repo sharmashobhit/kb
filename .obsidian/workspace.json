@@ -4,40 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "972e49bfb6c40e6d",
+        "id": "f48a1f159b496ce4",
         "type": "tabs",
         "children": [
           {
-            "id": "7bcf89ec08ad0d7a",
+            "id": "f68877fb6cf89130",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/System Design/07-authentication.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "edd42230e276f597",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "docs/Kafka.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a8d823083a467014",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/System Design/01-framework.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9b4edc6a5430f5c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/Languages/mermaid/cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -88,13 +76,20 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "c70cadb0d88230b4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "224c6a61c99b5164",
@@ -110,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/Kafka.md",
+                "file": "docs/System Design/07-authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/Kafka.md",
+                "file": "docs/System Design/07-authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/Kafka.md"
+                "file": "docs/System Design/07-authentication.md"
               }
             }
           },
@@ -181,8 +176,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7bcf89ec08ad0d7a",
+  "active": "f68877fb6cf89130",
   "lastOpenFiles": [
+    "docs/Kafka.md",
+    "docs/System Design/07-authentication.md",
+    "docs/System Design/08-authorization.md",
+    "docs/System Design/00-cheatsheet.md",
+    "docs/Redis.md",
+    "Untitled.md",
+    "Pasted image 20230501180846.png",
+    "docs/System Design/resources.md",
+    "docs/System Design/01-framework.md",
+    "docs/index.md",
     "Pasted image 20230501182915.png",
     "Pasted image 20230501182657.png",
     "Pasted image 20230501182517.png",
@@ -191,15 +196,10 @@
     "Pasted image 20230501181701.png",
     "Pasted image 20230501181546.png",
     "Pasted image 20230501181201.png",
-    "Pasted image 20230501180846.png",
     "docs/Languages/mermaid/cheatsheet.md",
-    "docs/Kafka.md",
     "docs/System Design/02-estimation.md",
     "docs/Untitled",
-    "docs/System Design/01-framework.md",
     "docs/System Design/01-basic-steps.md",
-    "docs/System Design/00-cheatsheet.md",
-    "docs/index.md",
     "docs/Languages/index..md",
     "docs/Docker/buildx.md",
     "docs/General Linux/Networking.md",
@@ -219,8 +219,6 @@
     "docs/Languages/mermaid/Untitled.md",
     "docs/Languages/mkdocs/markdown.md",
     "docs/Languages/Svelte/cheatsheet.md",
-    "docs/Languages/Svelte/sveltekit.md",
-    "docs/CS50AI/Notebook.md",
-    "code/test.rs.md"
+    "docs/Languages/Svelte/sveltekit.md"
   ]
 }

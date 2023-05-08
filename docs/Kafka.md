@@ -44,6 +44,7 @@ K-->B3(Audit)
 - Distributed, resilient architecture, fault tolerant
 - Horizontal Scalability
 - High performance(<10ms) ~realtime
+- Can scale to > millions of messages/second
 
 
 # Uses of Kafka
