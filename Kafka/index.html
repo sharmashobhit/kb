@@ -1,0 +1,693 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href=".." rel="prev"/>
+<link href="../Pasted%20image%2020230501182915.png/" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.23" name="generator"/>
+<title>Why Kafka? - kb @ sharmashobh.it</title>
+<link href="../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="white" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#why-kafka">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="kb @ sharmashobh.it" class="md-header__button md-logo" data-md-component="logo" href=".." title="kb @ sharmashobh.it">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            kb @ sharmashobh.it
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Why Kafka?
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="white" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Light mode" class="md-option" data-md-color-accent="light-blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="kb @ sharmashobh.it" class="md-nav__button md-logo" data-md-component="logo" href=".." title="kb @ sharmashobh.it">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    kb @ sharmashobh.it
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Why Kafka?
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Pasted%20image%2020230501182915.png/">
+<span class="md-ellipsis">
+    Pasted image 20230501182915.png
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Redis/">
+<span class="md-ellipsis">
+    Scaling with Redis Cluster
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    CS50AI
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            CS50AI
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CS50AI/Notebook/">
+<span class="md-ellipsis">
+    Notebook
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    Docker
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            Docker
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Docker/Basic/">
+<span class="md-ellipsis">
+    Basic
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Docker/buildx/">
+<span class="md-ellipsis">
+    Buildx
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<span class="md-ellipsis">
+    General Linux
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+            General Linux
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../General%20Linux/Networking/">
+<span class="md-ellipsis">
+    Networking
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+<span class="md-ellipsis">
+    Kubernetes
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+            Kubernetes
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Kubernetes/Cheatsheet/">
+<span class="md-ellipsis">
+    Cheatsheet
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Kubernetes/Local%20Node%20Setup/">
+<span class="md-ellipsis">
+    Local Node Setup
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Flux
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_8_3">
+<span class="md-nav__icon md-icon"></span>
+            Flux
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Kubernetes/Flux/Cheatsheet/">
+<span class="md-ellipsis">
+    Cheatsheet
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+<span class="md-ellipsis">
+    Languages
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+            Languages
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="0">
+<span class="md-ellipsis">
+    Rust
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_9_1">
+<span class="md-nav__icon md-icon"></span>
+            Rust
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Languages/Rust/Basics/">
+<span class="md-ellipsis">
+    Why Rust?
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Languages/Rust/Vec/">
+<span class="md-ellipsis">
+    vec.windows(usize)
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Svelte
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_9_2">
+<span class="md-nav__icon md-icon"></span>
+            Svelte
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Languages/Svelte/cheatsheet/">
+<span class="md-ellipsis">
+    Cheatsheet
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Languages/Svelte/sveltekit/">
+<span class="md-ellipsis">
+    Sveltekit
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9_3" id="__nav_9_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Mermaid
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_9_3">
+<span class="md-nav__icon md-icon"></span>
+            Mermaid
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Languages/mermaid/cheatsheet/">
+<span class="md-ellipsis">
+    mermaid.js
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9_4" id="__nav_9_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Mkdocs
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_9_4">
+<span class="md-nav__icon md-icon"></span>
+            Mkdocs
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Languages/mkdocs/markdown/">
+<span class="md-ellipsis">
+    Adding a button
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+<span class="md-ellipsis">
+    System Design
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            System Design
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../System%20Design/00-cheatsheet/">
+<span class="md-ellipsis">
+    Common layer across most applications
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../System%20Design/01-basic-steps/">
+<span class="md-ellipsis">
+    01 basic steps
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../System%20Design/01-framework/">
+<span class="md-ellipsis">
+    01 framework
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../System%20Design/02-estimation/">
+<span class="md-ellipsis">
+    Availability Numbers
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../System%20Design/07-authentication/">
+<span class="md-ellipsis">
+    Authentication
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../System%20Design/08-authorization/">
+<span class="md-ellipsis">
+    08 authorization
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../System%20Design/resources/">
+<span class="md-ellipsis">
+    Resources
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="why-kafka">Why Kafka?<a class="headerlink" href="#why-kafka" title="Permanent link">¶</a></h1>
+<p>As the applications grow and more nodes are added to each layer, the application soon turns into a mesh of connected services. In order to streamline our data flow, we introduce a <a href="https://en.wikipedia.org/wiki/Message-oriented_middleware">Message Oriented Middleware(MOM)</a></p>
+<p>Kafka is a little more than a traditional MOM, it is a <a href="https://en.wikipedia.org/wiki/Distributed_computing" title="Distributed computing">distributed</a> <a href="https://en.wikipedia.org/wiki/Event_store" title="Event store">event store</a> and <a href="https://en.wikipedia.org/wiki/Stream_processing">stream-processing</a> platform written in <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> and <a href="https://en.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a>. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds. Kafka can connect to external systems (for data import/export) via Kafka Connect, and provides the Kafka Streams <a href="https://en.wikipedia.org/wiki/Library_(computing)" title="Library (computing)">libraries</a> for stream processing applications. Kafka uses a binary <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a>-based protocol that is optimized for efficiency and relies on a "message set" abstraction that naturally groups messages together to reduce the overhead of the network roundtrip. This "leads to larger network packets, larger sequential disk operations, contiguous memory blocks which allows Kafka to turn a bursty stream of random message writes into linear writes.</p>
+<pre class="mermaid"><code>flowchart TD
+
+A[Source System] --&gt;|Commit Data to| B(Database)
+</code></pre>
+<p>Soon this system turns into</p>
+<pre class="mermaid"><code>flowchart TD
+
+A1[Source System] --&gt;B1(Database)
+A1[Source System] --&gt;B2(Analytics)
+A1[Source System] --&gt;B3(Audit)
+A2[Source System] --&gt;B1(Database)
+A2[Source System] --&gt;B2(Analytics)
+A2[Source System] --&gt;B3(Audit)
+A3[Source System] --&gt;B1(Database)
+A3[Source System] --&gt;B2(Analytics)
+A3[Source System] --&gt;B3(Audit)</code></pre>
+<p>In order to avoid mesh like this we introduce Kafka. It helps you decouple your data streams.</p>
+<pre class="mermaid"><code>
+flowchart TD
+A1[Source]--&gt;K(Kafka)
+A2[Source]--&gt;K(Kafka)
+A3[Source]--&gt;K(Kafka)
+K--&gt;B1(Database)
+K--&gt;B2(Analytics)
+K--&gt;B3(Audit)</code></pre>
+<ul>
+<li>Distributed, resilient architecture, fault tolerant</li>
+<li>Horizontal Scalability</li>
+<li>High performance(&lt;10ms) ~realtime</li>
+<li>Can scale to &gt; millions of messages/second</li>
+</ul>
+<h1 id="uses-of-kafka">Uses of Kafka<a class="headerlink" href="#uses-of-kafka" title="Permanent link">¶</a></h1>
+<ul>
+<li>Messaging System</li>
+<li>Activity tracking</li>
+<li>Gather metrics from various sources</li>
+<li>Application logs gatethering</li>
+<li>De-coupling system</li>
+<li>stream processing(Kafka Streams API or Spark)</li>
+<li>Integrations with Spark, flint, hadoop etc.</li>
+</ul>
+<h1 id="kafka-ecosystem">Kafka Ecosystem<a class="headerlink" href="#kafka-ecosystem" title="Permanent link">¶</a></h1>
+<pre class="mermaid"><code>
+flowchart LR
+
+S[Source Systems]
+P[Producers]
+K[Kafka]
+C[Consumers]
+T[Target Systems]
+Z[Zookeeper]
+S --&gt; P
+P --&gt; K
+K --&gt; Z
+Z --&gt; K
+K --&gt; C
+C --&gt; T</code></pre>
+<h1 id="kafka-extended-api">Kafka Extended API<a class="headerlink" href="#kafka-extended-api" title="Permanent link">¶</a></h1>
+<ul>
+<li>Kafka Connect + kafka streams + clster</li>
+</ul>
+<h1 id="kafka-confluent-components">Kafka confluent components<a class="headerlink" href="#kafka-confluent-components" title="Permanent link">¶</a></h1>
+<ul>
+<li>proprietary compoents from confluent.<ul>
+<li>Schema</li>
+<li>REST proxy</li>
+</ul>
+</li>
+</ul>
+<h1 id="kafka-core-concepts-and-api">Kafka core concepts and API<a class="headerlink" href="#kafka-core-concepts-and-api" title="Permanent link">¶</a></h1>
+<h1 id="kafka-in-the-enterprise-architecture">Kafka in the enterprise architecture<a class="headerlink" href="#kafka-in-the-enterprise-architecture" title="Permanent link">¶</a></h1>
+<p>![[Pasted image 20230501180846.png]]</p>
+<h1 id="topics-and-partitions">Topics and partitions<a class="headerlink" href="#topics-and-partitions" title="Permanent link">¶</a></h1>
+<ul>
+<li>Topic is a stream of data.<ul>
+<li>Similar to table in a database(no constraints. More like a bucket in NoSQL)</li>
+<li>No limitations on topics.</li>
+<li>Topic is identified by their name</li>
+</ul>
+</li>
+<li>
+<p>Topic are split into partitions</p>
+<ul>
+<li>Each partition is ordered.</li>
+<li>Each message within partition gets an incremental ID called offset.
+ ![[Pasted image 20230501181201.png]]</li>
+</ul>
+</li>
+<li>
+<p>Offsets are relevant only for a particular partition.</p>
+</li>
+<li>Data is kept for a limited time(default is 2 weeks).</li>
+<li>Data written to partition is <strong>immutable</strong>.</li>
+<li>Data is pushed to topic. The partition is assigned randomly by hash manager.</li>
+<li>More partitions =&gt; more parallelizations.</li>
+</ul>
+<h1 id="brokers">Brokers<a class="headerlink" href="#brokers" title="Permanent link">¶</a></h1>
+<ul>
+<li>Kafka cluster is composed of multiple brokers(nodes/servers)</li>
+<li>Broker has ID</li>
+<li>Each broker contains certain topic partitions.</li>
+<li>You connect to 1 broker(called bootstrap broker). This enables us to connect with the entire cluster.
+![[Pasted image 20230501181546.png]]</li>
+</ul>
+<h1 id="topic-replication-factor">Topic replication factor<a class="headerlink" href="#topic-replication-factor" title="Permanent link">¶</a></h1>
+<ul>
+<li>Topic should have a replication factor &gt; 1(usually 2 or 3)</li>
+<li>In case 1 broker goes down
+![[Pasted image 20230501181701.png]]</li>
+</ul>
+<h1 id="partition-leader">Partition leader<a class="headerlink" href="#partition-leader" title="Permanent link">¶</a></h1>
+<ul>
+<li>At any time, only 1 broker can act as a leader for a given partition.</li>
+<li>Only leader can receive and serve data for partition.</li>
+<li>Other replicas will sync with the data.
+![[Pasted image 20230501181856.png]]</li>
+</ul>
+<h1 id="producers">Producers<a class="headerlink" href="#producers" title="Permanent link">¶</a></h1>
+<ul>
+<li>Producer writes data to topics
+![[Pasted image 20230501181932.png]]</li>
+</ul>
+<h2 id="acks">Acks<a class="headerlink" href="#acks" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Acks=</th>
+<th></th>
+<th>Data loss probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Don't wait for acknowledgement</td>
+<td>Possible</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Producer will wait for leader acknowledgement</td>
+<td>Possible but Limited</td>
+</tr>
+<tr>
+<td>all</td>
+<td>Leader + Replica acknowledgement</td>
+<td>Most secure.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-keys">Message Keys<a class="headerlink" href="#message-keys" title="Permanent link">¶</a></h2>
+<ul>
+<li>Producer can choose to send a key</li>
+<li>Key ensures data goes to the same partition.</li>
+<li>This enables chronology in a distributed system.</li>
+</ul>
+<h1 id="consumers">Consumers<a class="headerlink" href="#consumers" title="Permanent link">¶</a></h1>
+<ul>
+<li>Read data from topic</li>
+<li>Consumes data in parallel across partitions.
+![[Pasted image 20230501182517.png]]</li>
+</ul>
+<h2 id="consumer-groups">Consumer Groups<a class="headerlink" href="#consumer-groups" title="Permanent link">¶</a></h2>
+<ul>
+<li>Each consumer within group reads from exclusive partitions</li>
+<li>No. of consumers !&gt; No. of partitions
+![[Pasted image 20230501182657.png]]</li>
+</ul>
+<h2 id="consumer-offsets">Consumer offsets<a class="headerlink" href="#consumer-offsets" title="Permanent link">¶</a></h2>
+<ul>
+<li>Tells consumer where to read from</li>
+<li>Kafka stores the offset at which the consumer group is reading</li>
+<li>The offsets commit live in Kafka topic name "__consumer_offsets"</li>
+<li>When a consumer has processed data received on Kafka, it should commit the offsets.</li>
+<li>If a consumer process dies, it will be able to read back from last known location.
+<img alt="Pasted image 20230501182915.png" src="../Pasted%20image%2020230501182915.png/"/></li>
+</ul>
+<h1 id="zookeeper">Zookeeper<a class="headerlink" href="#zookeeper" title="Permanent link">¶</a></h1>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.ebd0bdb7.min.js"></script>
+<script src="../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
